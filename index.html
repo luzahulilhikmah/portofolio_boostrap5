@@ -156,72 +156,72 @@
     <!-- Akhir Projects -->
 
     <!-- Gallery -->
-    <section id="gallerr">
+    <section id="gallery">
       <div class="container">
         <div class="row text-center mb-3">
           <div class="col">
             <h2>Gallery</h2>
           </div>
         </div>
-        <div class="row">
+        <div class="row justify-content-center">
           <div class="col-md-3">
             <a href="#">
-              <img src="img/gallery/thumbnail/1" alt="Gambar 1" class="img-fluid" />
+              <img src="img/gallery/thumbnail/1.jpeg" alt="Gambar 1" class="img-fluid gallery-img" />
             </a>
           </div>
           <div class="col-md-3">
             <a href="#">
-              <img src="img/gallery/thumbnail/1" alt="Gambar 1" class="img-fluid" />
+              <img src="img/gallery/thumbnail/2.jpeg" alt="Gambar 1" class="img-fluid gallery-img" />
             </a>
           </div>
           <div class="col-md-3">
             <a href="#">
-              <img src="img/gallery/thumbnail/1" alt="Gambar 1" class="img-fluid" />
+              <img src="img/gallery/thumbnail/3.jpeg" alt="Gambar 1" class="img-fluid gallery-img" />
             </a>
           </div>
           <div class="col-md-3">
             <a href="#">
-              <img src="img/gallery/thumbnail/1" alt="Gambar 1" class="img-fluid" />
+              <img src="img/gallery/thumbnail/4.jpeg" alt="Gambar 1" class="img-fluid gallery-img" />
             </a>
           </div>
           <div class="col-md-3">
             <a href="#">
-              <img src="img/gallery/thumbnail/1" alt="Gambar 1" class="img-fluid" />
+              <img src="img/gallery/thumbnail/5.jpeg" alt="Gambar 1" class="img-fluid gallery-img" />
             </a>
           </div>
           <div class="col-md-3">
             <a href="#">
-              <img src="img/gallery/thumbnail/1" alt="Gambar 1" class="img-fluid" />
+              <img src="img/gallery/thumbnail/6.jpeg" alt="Gambar 1" class="img-fluid gallery-img" />
             </a>
           </div>
           <div class="col-md-3">
             <a href="#">
-              <img src="img/gallery/thumbnail/1" alt="Gambar 1" class="img-fluid" />
+              <img src="img/gallery/thumbnail/7.jpeg" alt="Gambar 1" class="img-fluid gallery-img" />
             </a>
           </div>
           <div class="col-md-3">
             <a href="#">
-              <img src="img/gallery/thumbnail/1" alt="Gambar 1" class="img-fluid" />
+              <img src="img/gallery/thumbnail/8.jpeg" alt="Gambar 1" class="img-fluid gallery-img" />
             </a>
           </div>
           <div class="col-md-3">
             <a href="#">
-              <img src="img/gallery/thumbnail/1" alt="Gambar 1" class="img-fluid" />
+              <img src="img/gallery/thumbnail/9.jpeg" alt="Gambar 1" class="img-fluid gallery-img" />
             </a>
           </div>
           <div class="col-md-3">
             <a href="#">
-              <img src="img/gallery/thumbnail/1" alt="Gambar 1" class="img-fluid" />
+              <img src="img/gallery/thumbnail/10.jpeg" alt="Gambar 1" class="img-fluid gallery-img" />
             </a>
           </div>
           <div class="col-md-3">
             <a href="#">
-              <img src="img/gallery/thumbnail/1" alt="Gambar 1" class="img-fluid" />
+              <img src="img/gallery/thumbnail/11.jpeg" alt="Gambar 1" class="img-fluid gallery-img" />
             </a>
           </div>
           <div class="col-md-3">
             <a href="#">
-              <img src="img/gallery/thumbnail/1" alt="Gambar 1" class="img-fluid" />
+              <img src="img/gallery/thumbnail/12.jpeg" alt="Gambar 1" class="img-fluid gallery-img" />
             </a>
           </div>
         </div>
@@ -286,6 +286,12 @@
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
+      const galleryImage = document.querySelectorAll(".gallery-img");
+      galleryImage.forEach((img, i) => {
+        img.dataset.aos = "fade-down";
+        img.dataset.aosDelay = i * 100;
+        img.dataset.aosDuration = 1000;
+      });
       AOS.init({
         once: true,
       });
